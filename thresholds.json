@@ -1,0 +1,357 @@
+{
+  "categories": {
+    "Market Size & Financial Viability": {
+      "weight": 0.2,
+      "metrics": {
+        "GDP per capita": {
+          "label": "GDP per capita (current US$)",
+          "weight": 0.3,
+          "breaks": [
+            3000,
+            10000,
+            30000,
+            60000
+          ],
+          "scores": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "higher_better",
+          "reason": "Higher affluence generally correlates with investable surplus."
+        },
+        "Gini coefficient": {
+          "label": "Income Gini coefficient (0\u20131)",
+          "weight": 0.05,
+          "breaks": [
+            0.48,
+            0.42,
+            0.36,
+            0.3
+          ],
+          "scores": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "lower_better",
+          "reason": "Lower inequality suggests a broader middle class base."
+        },
+        "Disposable income": {
+          "label": "Median household disposable income (USD per month)",
+          "weight": 0.3,
+          "breaks": [
+            500,
+            1000,
+            2000,
+            4000
+          ],
+          "scores": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "higher_better",
+          "reason": "Higher disposable income increases feasible savings rate."
+        },
+        "Retail investor penetration": {
+          "label": "Retail investor penetration (% of adults)",
+          "weight": 0.35,
+          "breaks": [
+            5,
+            10,
+            20,
+            30
+          ],
+          "scores": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "higher_better",
+          "reason": "Larger investing cohort lowers education cost and boosts uptake."
+        }
+      }
+    },
+    "Competitive Environment": {
+      "weight": 0.2,
+      "metrics": {
+        "Islamic robo competitors": {
+          "label": "Islamic robo-advisory competition (qualitative)",
+          "weight": 0.5,
+          "custom": true,
+          "options": [
+            "None present",
+            "Sparse presence",
+            "Moderate competition",
+            "Several well-known players",
+            "Crowded market"
+          ],
+          "reason": "Scarcity implies first-mover advantages; crowding raises CAC."
+        },
+        "Conventional robo penetration": {
+          "label": "Conventional robo penetration (AUM per capita, US$)",
+          "weight": 0.4,
+          "breaks": [
+            500,
+            1000,
+            2000,
+            4000
+          ],
+          "scores": [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "direction": "lower_better",
+          "reason": "High incumbent penetration reduces whitespace."
+        },
+        "Digital maturity": {
+          "label": "Digital distribution maturity (qualitative)",
+          "weight": 0.1,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Digital readiness reduces CAC and service costs."
+        }
+      }
+    },
+    "Investment Environment": {
+      "weight": 0.2,
+      "metrics": {
+        "Shariah-compliant instruments": {
+          "label": "Shariah-compliant listed instruments (qualitative or proxy count)",
+          "weight": 0.3,
+          "custom": true,
+          "options": [
+            "None available",
+            "Few (1\u20135)",
+            "Moderate range (6\u201320)",
+            "Strong range (21\u201350)",
+            "Extensive opportunities (50+)"
+          ],
+          "reason": "Breadth of compliant ETFs/funds improves construction and liquidity."
+        },
+        "Sukuk & mutual funds": {
+          "label": "Sukuk & Islamic mutual fund access (qualitative)",
+          "weight": 0.2,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Debt-like and fund wrappers expand conservative allocations."
+        },
+        "Real estate crowdfunding": {
+          "label": "Real-estate crowdfunding availability & legal clarity (qualitative)",
+          "weight": 0.2,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Clear frameworks enable fractional exposure without bespoke structures."
+        },
+        "Ethical commodities": {
+          "label": "Ethically sourced gold/commodities infrastructure (qualitative)",
+          "weight": 0.3,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "AAOIFI-aligned chains simplify compliant commodity allocation."
+        }
+      }
+    },
+    "Regulatory Landscape": {
+      "weight": 0.2,
+      "metrics": {
+        "Clarity for Islamic Finance": {
+          "label": "Islamic finance regime clarity (qualitative)",
+          "weight": 0.4,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "National Shariah boards or accepted governance reduce uncertainty."
+        },
+        "Licensing process": {
+          "label": "Robo licensing ease/transparency (qualitative)",
+          "weight": 0.3,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Predictable licensing timelines and clear rules speed up launch."
+        },
+        "Regulatory stability": {
+          "label": "Regulatory stability (qualitative)",
+          "weight": 0.2,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Stable rule-making lowers operational and legal risk."
+        },
+        "KYC providers": {
+          "label": "Digital KYC/AML providers (qualitative)",
+          "weight": 0.1,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Strong KYC vendors cut onboarding friction and fraud risk."
+        }
+      }
+    },
+    "Operational Setup Costs & Complexity": {
+      "weight": 0.1,
+      "metrics": {
+        "Physical setup cost": {
+          "label": "Physical presence cost (office/kiosk) (qualitative)",
+          "weight": 0.05,
+          "custom": true,
+          "options": [
+            "Very high",
+            "High",
+            "Moderate",
+            "Low",
+            "Very low"
+          ],
+          "reverse_options": true,
+          "reason": "High rent/fit-out increases burn; lower cost improves runway."
+        },
+        "Brokers & custodians": {
+          "label": "Custody/broker/payment infrastructure (qualitative)",
+          "weight": 0.9,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Mature rails reduce failures, spreads, and reconciliation costs."
+        },
+        "Talent pool": {
+          "label": "Talent pool index (0=shallow & costly, 1=deep & efficient)",
+          "weight": 0.05,
+          "breaks": [
+            0.4,
+            0.6,
+            0.75,
+            0.9
+          ],
+          "scores": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "higher_better",
+          "reason": "Local fintech/data/compliance talent depth and cost effects."
+        }
+      }
+    },
+    "Cultural Fit & Messaging": {
+      "weight": 0.1,
+      "metrics": {
+        "Ethical investing culture": {
+          "label": "Responsible-investing culture & AUM (qualitative)",
+          "weight": 0.25,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Norms and AUM signal appetite for values-based products."
+        },
+        "Shariah finance attitudes": {
+          "label": "Attitudes toward Shariah-compliant investing (qualitative)",
+          "weight": 0.25,
+          "custom": true,
+          "options": [
+            "Very weak",
+            "Weak",
+            "Moderate",
+            "Strong",
+            "Excellent"
+          ],
+          "reason": "Acceptance of Shariah filters boosts trust and reduces friction."
+        },
+        "Attitude towards Muslims": {
+          "label": "Social attitudes toward Muslims (qualitative)",
+          "weight": 0.3,
+          "custom": true,
+          "options": [
+            "Very negative",
+            "Negative",
+            "Mixed/neutral",
+            "Positive",
+            "Very positive"
+          ],
+          "reason": "Inclusion affects brand risk and tone of communications."
+        },
+        "Digital adoption": {
+          "label": "Customer engagement preference (digital vs branches) (qualitative)",
+          "weight": 0.2,
+          "custom": true,
+          "options": [
+            "Very branch-preferred",
+            "Branch-leaning",
+            "Mixed",
+            "Digital-leaning",
+            "Digital-first"
+          ],
+          "reason": "Higher digital comfort improves conversion and lowers service cost."
+        }
+      }
+    }
+  }
+}
